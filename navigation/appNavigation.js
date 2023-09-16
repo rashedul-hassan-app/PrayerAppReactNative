@@ -18,7 +18,11 @@ export default function AppNavigation() {
         screenOptions={{
           contentStyle: {backgroundColor: 'white'},
         }}>
-        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen
+          name="HomeScreen"
+          component={HomeScreen}
+          options={{headerShown: true}}
+        />
         {/* <Stack.Screen name="Product" options={{headerShown: false}} /> */}
       </Stack.Navigator>
     </NavigationContainer>
